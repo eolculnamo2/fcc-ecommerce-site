@@ -14,6 +14,12 @@ db = SQLAlchemy(app)
 @dataclass
 class UserEntity(db.Model):
 
+  # we do not want to include password here so that it doesn't get mapped as json
+  uuid: str
+  email: str
+  first_name: str
+  last_name: str
+
   __tablename__ = 'user'
 
   uuid = db.Column(db.String, primary_key = True)
