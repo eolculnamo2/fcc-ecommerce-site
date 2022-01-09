@@ -1,0 +1,43 @@
+.navbar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 125px;
+  background-color: #f9fbf2;
+}
+
+.navbarTitle {
+  height: 100%;
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  color: #02c39a;
+}
+
+.navItems {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  list-style: none;
+}
+
+.navItems li:hover {
+  color: #02c39a;
+  cursor: pointer;
+}
+
+.navIcons {
+  height: 100%;
+  width: 25%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.navIcons:hover {
+  cursor: pointer;
+}
