@@ -1,0 +1,13 @@
+.InventoryForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .InventoryItem {
+      margin: 10px;
+      width: 300px;
+
+  }
+  

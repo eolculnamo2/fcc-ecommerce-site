@@ -41,3 +41,8 @@
 .navIcons:hover {
   cursor: pointer;
 }
+
+.navIcon {
+  height: 25px;
+  width: 25px;
+}
