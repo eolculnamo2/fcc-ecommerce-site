@@ -1,0 +1,18 @@
+{% extends 'base_layout.html' %}
+
+{% block content %}
+
+	<h1>Vehicles</h1>
+	<div class="vehicles">
+		{% for vehicle in vehicles %}
+			<div class="vehicle">
+				<h2><a href='{% url 'articles:detail' make=vehicle.make %}'> {{vehicle.make}} </a></h2>
+				<p> {{vehicle.year}} </p>
+				<p> {{vehicle.submodel}} </p>
+				<p> {{vehicle.snippet}} </p>
+			</div>
+
+		{% endfor %}
+	</div>
+
+{%  endblock %}
