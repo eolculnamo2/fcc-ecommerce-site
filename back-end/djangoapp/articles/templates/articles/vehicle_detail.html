@@ -1,0 +1,15 @@
+{% extends 'base_layout.html' %}
+
+{% block content %}
+<div class="vehicle-detail">
+	<div class="vehicle">
+		<img src=" {{ vehicle.image.url }} "/>
+		<h2>{{vehicle.make}}</h2>
+		<p> {{vehicle.year}} </p>
+		<p> {{vehicle.submodel}} </p>
+
+	</div>
+
+</div>
+
+{% endblock %}
