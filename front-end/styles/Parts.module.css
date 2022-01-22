@@ -1,0 +1,45 @@
+.AddModalFormContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+  }
+  
+  .AddModalForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #1d3557;
+    color: white;
+    border-radius: 5px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    width: 700px;
+    height: 425px;
+    padding: 10px;
+  }
+  
+  .AddModalFormInputs {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 600px;
+    height: 300px;
+  }
+  .AddModalFormInputs li {
+    justify-self: start;
+    list-style: none; 
+    width: 100%;
+  }
+  
+  .AddModalFormContainer button {
+    border: none;
+    width: 100px;
+    height: 35px;
+    border-radius: 5px;
+  }
+  
+  .AddModalInput{
+    width: 100%;
+    height: 30px;
+  }

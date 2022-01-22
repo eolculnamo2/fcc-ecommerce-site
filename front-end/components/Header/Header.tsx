@@ -13,11 +13,15 @@ const Header = () => {
       <ul className={styles.navItems}>
         <li>
           <Link href="/" prefetch>
-            Home
+            Shop
           </Link>
         </li>
-        <li>About</li>
-        <li>Shop</li>
+        <li>
+          <Link href="/parts">
+            Other Parts
+          </Link>
+        </li>
+        <li>Cart</li>
         <li>
           <Link passHref href="/login" prefetch>
             Login
