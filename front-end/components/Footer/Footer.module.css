@@ -1,20 +1,18 @@
-.footer {
+.Footer {
   display: flex;
-  flex: 1;
-  padding: 2rem 0;
-  border-top: 1px solid #eaeaea;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
+  height: 125px;
+  background-color: #f9fbf2;
+  list-style: none;
 }
 
-.footer a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-grow: 1;
+.Footer li {
+  margin: 25px;
 }
 
-.logo {
-  height: 1em;
-  margin-left: 0.5rem;
+.Footer li:hover {
+  color: #02c39a;
+  cursor: pointer;
 }

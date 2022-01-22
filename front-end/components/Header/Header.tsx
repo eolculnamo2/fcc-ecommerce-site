@@ -1,6 +1,9 @@
 import Link from "next/link";
 import * as React from "react";
 import styles from "./Header.module.css";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faSearch } from '@fortawesome/free-solid-svg-icons';
+import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
 
 const Header = () => {
   return (
@@ -23,8 +26,8 @@ const Header = () => {
       </ul>
 
       <ul className={styles.navIcons}>
-        <i className="fas fa-search"></i>
-        <i className="fas fa-shopping-cart"></i>
+        <FontAwesomeIcon icon={faSearch} className={styles.navIcon} />
+        <FontAwesomeIcon icon={faShoppingCart} className={styles.navIcon} />
       </ul>
     </nav>
   );
