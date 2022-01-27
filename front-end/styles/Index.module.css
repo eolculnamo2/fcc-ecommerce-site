@@ -3,11 +3,45 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-  }
+}
+  
+.InventoryItem {
+    margin: 10px;
+    width: 300px;
+}
 
-  .InventoryItem {
-      margin: 10px;
-      width: 300px;
-
+.InventoryItems {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid;
+    border-radius: 5px;
+    margin: 30px;
+    padding: 10px;
+    background-color: #1d3557;
+    color: white;
+    height: 60px;
+    width: 800px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
   }
   
+  .InventoryItems button {
+    border: none;
+    height: 25px;
+    border-radius: 5px;
+    background-color: #1d3557;
+    color: white;
+  }
+  
+  .InventoryItems button:hover {
+    cursor: pointer;
+    color: #02c39a;
+  }
+  
+  .InventoryItem {
+    border: none;
+    background-color: #1d3557;
+    color: white;
+  }
+ 

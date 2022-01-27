@@ -29,7 +29,8 @@ function Inventory(){
 
 function List(){
   const CarInfo = cars.map((car) => 
-    <form>                               
+    <form className={styles.InventoryItems}>                               
+
                              
       <label hmtlFor="CarItem">Item:</label>                       
       <input className={styles.InventoryItem} type="text" name="CarItem" value={car.item} />
@@ -38,7 +39,9 @@ function List(){
       <label htmlFor="CarItem-price">Price:</label>                        
       <input className={styles.InventoryItem} type="text" name="CarItem-price" value={car.price} />
       <button type="submit">Add Item</button>
-      <button type="button">X</button>                                
+      <button type="button">X</button>
+
+                                      
       
     </form>                        
                         
