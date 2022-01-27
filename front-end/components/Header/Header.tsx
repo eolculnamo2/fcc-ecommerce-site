@@ -21,7 +21,11 @@ const Header = () => {
             Other Parts
           </Link>
         </li>
-        <li>Cart</li>
+        <li>
+          <Link href="/cart">
+            Cart
+          </Link>
+        </li>
         <li>
           <Link passHref href="/login" prefetch>
             Login
