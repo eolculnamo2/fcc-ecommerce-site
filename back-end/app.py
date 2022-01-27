@@ -1,14 +1,16 @@
-from dataclasses import dataclass
-from enum import unique
-from flask import Flask, request, Response, jsonify
-from flask_sqlalchemy import SQLAlchemy
 import uuid
-import json
+from dataclasses import dataclass
+
+from flask import Flask, jsonify, request
+from flask_sqlalchemy import SQLAlchemy
+from flask_cors import CORS, cross_origin
+
 
 # TODO: we should organize a lot of this into different modules
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://root:root@localhost:3306/ecommerce'
 
+cors = CORS(app)
 db = SQLAlchemy(app)
 
 @dataclass
@@ -37,6 +39,7 @@ def index():
   return "hello ecommerce site!"
 
 @app.route('/user', methods = ['POST', 'GET'])
+@cross_origin()
 def user():
   if request.method == 'POST':
     id = str(uuid.uuid4())

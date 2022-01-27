@@ -1,0 +1,1 @@
+export const PARTS = [{item:"Tire", price:"$35"},{item:"Brakes", price:"$75"},{item:"Headlight Assembly", price:"$275"},{item:"Tail Light Assembly", price:"$225"},{item:"Brake Roters", price:"$55"},{item:"Battery", price:"$125"},{item:"Synthetic Oil", price:"$75"}]
